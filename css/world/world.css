@@ -1,0 +1,147 @@
+.container-world-enjoying {
+  width: 100vw;
+  height: 78vh;
+  overflow: hidden;
+}
+
+.container-world-enjoying-main {
+  position: relative;
+  width: 100%;
+}
+
+.container-world-enjoying-main > picture > img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container-world-enjoying-main > h2 {
+  position: absolute;
+  top: 30px;
+  left: 16px;
+  z-index: 1;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--w1);
+}
+
+.container-world-enjoying-highlights {
+  width: 100%;
+  height: 100%;
+  background-color: var(--s0);
+  margin-top: -6px;
+  overflow: hidden;
+}
+
+.container-world-enjoying-article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  width: clamp(300px, 90vw, 350px);
+  margin: 35px auto;
+}
+
+.container-world-enjoying-article > article {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 16px;
+  background-color: var(--s1);
+
+  padding: 4px 10px;
+}
+
+.container-world-enjoying-article > article > h5 {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--FiraCode);
+  line-height: normal;
+  color: var(--b1);
+}
+
+.container-world-enjoying-article > article > span {
+  align-self: end;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (min-width: 768px) {
+  .container-world-enjoying {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container-world-enjoying-main > h2 {
+    position: absolute;
+    top: 180px;
+    left: 330px;
+    width: 330px;
+    z-index: 1;
+
+    font-size: 36px;
+  }
+
+  .container-world-enjoying-main > picture > img {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    position: absolute;
+  }
+
+  .container-world-enjoying-highlights {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+  }
+
+  .container-world-enjoying-article {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+  }
+
+  .container-world-enjoying-article > article {
+    padding: 30px 45px;
+    gap: 50px;
+
+    justify-content: end;
+  }
+
+  .container-world-enjoying-article > article:last-child {
+    margin-left: 550px;
+  }
+
+  .container-world-enjoying-article > article > h5 {
+    font-size: 16px;
+  }
+
+  .container-world-enjoying-article > article > span {
+    font-size: 16px;
+
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-world-enjoying-article {
+    left: 300px;
+  }
+
+  .container-world-enjoying-article > article:last-child {
+    margin-left: 650px;
+  }
+}
